@@ -16,7 +16,8 @@ spec:
   template:                                               
     metadata:
       labels:
-        app: tr-microservice                                  
+        app: tr-microservice
+        category: optional
     spec:
       affinity:
         nodeAffinity:

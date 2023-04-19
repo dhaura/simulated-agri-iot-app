@@ -16,7 +16,8 @@ spec:
   template:                                               
     metadata:
       labels:
-        app: hr-microservice                                  
+        app: hr-microservice
+        category: optional
     spec:
       affinity:
         nodeAffinity:
