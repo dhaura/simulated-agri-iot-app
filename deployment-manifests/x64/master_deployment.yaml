@@ -5,7 +5,7 @@ metadata:
     app: agri-app-master
   name: agri-app-master
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: agri-app-master

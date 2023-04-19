@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: ur-microservice
-  replicas: 1
+  replicas: 5
   minReadySeconds: 15
   strategy:
     type: RollingUpdate

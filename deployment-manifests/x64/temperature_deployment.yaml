@@ -6,7 +6,7 @@ spec:
   selector:                                              
     matchLabels:
       app: tr-microservice
-  replicas: 1                                         
+  replicas: 5
   minReadySeconds: 15
   strategy:
     type: RollingUpdate                                   
