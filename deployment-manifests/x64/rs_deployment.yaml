@@ -14,6 +14,7 @@ spec:
     metadata:
       labels:
         app: agri-app-rs
+        category: optional
     spec:
       nodeName: node23
       containers:

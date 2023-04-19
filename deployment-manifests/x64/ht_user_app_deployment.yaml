@@ -19,6 +19,7 @@ spec:
     metadata:
       labels:
         app: ur-microservice
+        category: optional
     spec:
       containers:
         - image: dhaura/agri-app-ua:latest-x64
