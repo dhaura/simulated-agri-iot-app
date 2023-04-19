@@ -21,6 +21,15 @@ spec:
         app: ur-microservice
         category: optional
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: category
+                    operator: In
+                    values:
+                      - optional
       containers:
         - image: dhaura/agri-app-ua:latest-x64
           imagePullPolicy: Always

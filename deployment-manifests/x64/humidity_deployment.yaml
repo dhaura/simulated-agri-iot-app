@@ -18,6 +18,15 @@ spec:
       labels:
         app: hr-microservice                                  
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: category
+                    operator: In
+                    values:
+                      - mandatory
       containers:
         - image: dhaura/agri-app-hr:latest-x64
           imagePullPolicy: Always                        

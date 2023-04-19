@@ -16,7 +16,15 @@ spec:
         app: agri-app-rs
         category: optional
     spec:
-      nodeName: node23
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: category
+                    operator: In
+                    values:
+                      - optional
       containers:
       - args:
         - agri_app_rs
