@@ -23,7 +23,7 @@ spec:
                   - key: category
                     operator: In
                     values:
-                      - mandatory
+                      - optional
       containers:
       - args:
         - agri_app_master
