@@ -53,3 +53,12 @@ cd deployment-manifests/x64
 ```shell
 kubectl apply -f  .
 ```
+
+## API Endpoints
+You can access the Agri-IoT App using the following endpoints.
+| Feature | Protocol | Method | API Endpoint | Request Body |
+| -------- | -------- | -------- | -------- | -------- |
+| Verify whether the app is running | HTTP | GET | / | N/A |
+| View temparture logs in sector x | HTTP | GET | /read_temperature/x | N/A |
+| View humidity logs in sector x | HTTP | GET | /read_humidity/x | N/A |
+| Predict diseases in sector x | HTTP | POST | /predict_disease | {"sector": x} |
